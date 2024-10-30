@@ -1,0 +1,140 @@
+:root {
+  --primary: #FF8C00;
+  --secondry: #605B5B; /* Lưu ý: có thể muốn đổi thành --secondary */
+  --text: #E2AF71;
+}
+
+html,
+body {
+  margin: 0; /* Đặt margin thành 0 để loại bỏ khoảng cách mặc định */
+  padding: 0; /* Đặt padding thành 0 để loại bỏ padding mặc định */
+}
+* {
+  box-sizing: border-box;
+}
+.inknut-antiqua-light {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 300;
+}
+
+.inknut-antiqua-regular {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 400;
+}
+
+.inknut-antiqua-medium {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 500;
+}
+
+.inknut-antiqua-semibold {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 600;
+}
+
+.inknut-antiqua-bold {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 700;
+}
+
+.inknut-antiqua-extrabold {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 800;
+}
+
+.inknut-antiqua-black {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 15px;
+  color: white;
+  text-align: left; /* Căn chỉnh văn bản sang bên phải */
+  background-color: black; /* Màu nền */
+  margin: 0; /* Đặt margin thành 0 để tránh khoảng cách ngoài */
+  padding: 5px;
+}
+h1 a {
+  color: white; /* Màu chữ trắng cho liên kết */
+  text-decoration: none  !important; /* Loại bỏ gạch chân */
+}
+
+h1 a:hover {
+  color: red; /* Màu khi hover nếu bạn muốn */
+}
+h1 a:active {
+  color: white; /* Màu chữ vẫn là trắng khi bấm vào */
+}
+
+.header-nav__link {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  text-decoration: none !important; /* Bỏ gạch chân */
+  color: black; /* Màu chữ */
+}
+
+.header-nav__link:hover {
+  
+  color: red; /* Màu chữ khi hover */
+}
+
+.button {
+  height: 30px; 
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.0rem;
+  font-weight: 500;
+  padding: 8px 16px; /* Padding bên trong nút */
+}
+
+.button--boder {
+  border: 2px solid var(--primary); /* Tăng độ rộng viền để rõ ràng */
+  padding: 10px 20px; /* Thêm khoảng trống trong nút */
+  border-radius: 4px; /* Bo góc viền */
+  background-color: var(--primary); /* Màu nền */
+  color: black; 
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden; 
+}
+/* CSS cho nút tìm kiếm */
+.header-nav__link {
+  position: relative; /* Để icon tìm kiếm được căn chỉnh chính xác */
+  padding: 8px 12px; /* Khoảng cách bên trong */
+}
+
+/* CSS cho icon tìm kiếm */
+.header-nav__link .glyphicon-search {
+  
+  margin-left: 5px; /* Khoảng cách giữa chữ và icon */
+  font-size: 18px; /* Kích thước của icon */
+  padding-top: auto;
+}
+.header-nav__link:active,
+.header-nav__link:focus {
+  text-decoration: none !important; /* Bỏ gạch chân khi nhấn hoặc khi liên kết được chọn */
+}
+.button--boder:hover::before {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.button--boder::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background-color: #fff;
+  opacity: 0.1;
+  z-index: -1;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}

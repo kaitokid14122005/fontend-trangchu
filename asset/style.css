@@ -1,0 +1,363 @@
+body {
+    max-width: 1920px; /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa nội dung */
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+@media (min-width: 1920px) {
+    .container {
+        width: 80%; /* Giảm chiều rộng tổng thể để phù hợp với màn hình lớn */
+    }
+
+    .header-wapper {
+        padding: 20px 40px; /* Tăng khoảng cách padding trên màn hình lớn */
+    }
+
+    .banner {
+        height: 85vh; /* Điều chỉnh chiều cao cho banner */
+    }
+
+    .login {
+        width: 30%; /* Tăng kích thước form login */
+        left: 35%; /* Căn chỉnh lại vị trí cho màn hình lớn */
+        padding: 20px 40px; /* Thêm không gian trong form login */
+    }
+
+    .login input {
+        width: 90%; /* Tăng kích thước input trên màn hình lớn */
+        font-size: 16px; /* Tăng kích thước chữ */
+    }
+
+    .remember-me {
+        font-size: 20px; /* Tăng kích thước font chữ */
+    }
+}
+
+.login {
+    width: 50%;
+    height: 50%;
+    /* Sử dụng flex để form luôn nằm giữa */
+}
+
+.header-wapper {
+    display: flex;
+    justify-content: space-between;
+    /* Tạo khoảng cách giữa logo và thanh điều hướng */
+    align-items: center;
+    /* Căn giữa các phần tử theo chiều dọc */
+    padding: 10px 20px;
+    /* Thêm khoảng cách xung quanh để không bị sát lề */
+}
+
+.logo {
+    max-width: 4%;
+    /* Giới hạn chiều rộng tối đa của logo */
+    margin-left: 1%;
+    /* Thêm khoảng cách bên trái cho logo */
+    width: auto;
+    /* Sử dụng chiều rộng tự động để duy trì tỉ lệ */
+    height: auto;
+    /* Duy trì tỉ lệ chiều cao tự động */
+}
+
+.header-nav__list {
+    display: flex;
+    /* Sử dụng flexbox để căn chỉnh các mục trong danh sách */
+    align-items: center;
+    /* Căn giữa các mục trong danh sách theo chiều dọc */
+    gap: 15px;
+    /* Khoảng cách giữa các mục trong danh sách */
+    margin-bottom: 0;
+    /* Đặt margin dưới danh sách về 0 để tránh khoảng cách không cần thiết */
+    list-style: none;
+    /* Bỏ đánh dấu danh sách mặc định */
+    padding: 0;
+    /* Bỏ padding mặc định của danh sách */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    /* Chiều rộng là 100% viewport */
+    height: 83vh;
+    /* Chiều cao là 100% màn hình */
+    background-size: cover;
+    /* Ảnh bao phủ toàn bộ màn hình, giữ tỷ lệ gốc */
+    background-position: center;
+    /* Đặt background ở giữa */
+    background-repeat: no-repeat;
+    /* Không lặp lại background */
+}
+
+.Backgourd1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Chiều rộng 100% của màn hình */
+    height: 75%;
+    /* Chiều cao 100% của màn hình */
+    z-index: 2;
+    /* Nằm trên Backgoud2 */
+}
+
+.Backgoud2 {
+    position: absolute;
+    top: 10%;
+    /* Chỉnh lại top về 0 để full màn hình */
+    left: 0;
+    /* Đặt ở vị trí góc trái */
+    width: 100%;
+    /* Chiều rộng 100% màn hình */
+    height: 70%;
+    /* Chiều cao 100% màn hình */
+    z-index: 1;
+    /* Nằm dưới Backgourd1 */
+}
+
+.h2 {
+    font-family: Inknut Antiqua;
+}
+
+.login {
+    display: inline-block;
+    position: absolute;
+    top: 43%;
+    height: 60%;
+    left: 25%;
+    /* Di chuyển sang trái bằng cách điều chỉnh left */
+    transform: translate(-50%, -30%);
+    z-index: 2;
+    background-color:white;
+    padding: 0px 20px;   
+    /* Giảm padding để form nhỏ lại */
+    border-radius: 10%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width:26%;
+    /* Giảm kích thước chiều rộng form */
+    border: 1px solid black;
+}
+
+.login h2 {
+    margin: 7%;
+    /* Giảm khoảng cách dưới tiêu đề */
+    text-align: center;
+    font-family: 'Inknut Antiqua', serif;
+}
+
+.login p {
+    margin-bottom: 3%;
+    /* Giảm khoảng cách giữa các mục */
+    display: flex;
+    align-items: center;
+}
+.login img {
+    margin-right: 4%;
+    /* Giảm khoảng cách giữa biểu tượng và ô nhập liệu */
+    width: 5%;
+    /* Giảm kích thước biểu tượng */
+}
+
+.login input {
+    width: 81%;
+    padding: 3%;
+    /* Giảm padding để ô nhập liệu nhỏ hơn */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    /* Giảm kích thước chữ */
+}
+
+.login h2,
+.login a {
+    font-size: 1.5rem;
+    /* Giống kích thước của menu */
+    font-family: 'Inknut Antiqua', serif;
+    /* Giống font chữ của menu */
+    font-weight: 300;
+    /* Độ dày chữ */
+}
+
+
+.login a {
+    text-decoration: none;
+    /* Bỏ gạch chân mặc định */
+    color: black;
+    /* Màu chữ mặc định */
+}
+
+.login a:hover {
+    text-decoration: underline;
+    /* Hiện gạch chân khi di chuột vào */
+    color: #FF8C00;
+    /* Bạn có thể đổi màu khi hover nếu muốn */
+}
+.login label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    font-size: 2.0rem;
+    margin: -20px 0 2%;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.remember-me input[type="checkbox"] {
+    width: 13%;
+    height: 15%;
+}
+
+.login button {
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    top: -30px;
+    left: 10%;
+    /* Di chuyển nút lên trên */
+    width: 80%;
+    height: 10%;
+    border: 2px solid var(--primary);
+    /* Tăng độ rộng viền để rõ ràng */
+   
+    padding: 20px 20px;
+    /* Thêm khoảng trống trong nút */
+    border-radius: 10px;
+    /* Bo góc viền */
+    background-color: var(--primary);
+    /* Màu nền */
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+.login a{
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    font-size: 11px;
+    margin-top: -35px;
+}
+.create a{
+    position: relative;
+    top: 50px;
+    margin-top: -0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+.corgi {
+    position: absolute;
+    width: 88% !important;
+    height: 85% !important;
+    top: 0%;
+    left: 100%;
+   
+    z-index: 1;
+    pointer-events: none; /* Không nhận sự kiện click */
+}
+.hello-container {
+    position: absolute;
+    width: 70%; /* Điều chỉnh kích thước container */
+    height: 70%;
+    top: -10%; 
+    left: 257%;
+    transform: translateX(-50%); /* Căn giữa theo chiều ngang */
+    z-index: 5; /* Đảm bảo hello nằm trên cùng */
+}
+
+.hello-container img {
+    width: 100%; /* Đảm bảo ảnh chiếm hết chiều rộng container */
+    height: 100%; /* Đảm bảo ảnh chiếm hết chiều cao container */
+    object-fit: cover; /* Giữ tỷ lệ ảnh và làm đầy container */
+}
+.cho {
+    justify-content: space-around;
+    width: 29%;
+    height:29%;
+    position: absolute; /* Đặt vị trí tuyệt đối để ảnh có thể nằm ngoài login */
+    top: 107%; /* Căn chỉnh theo chiều dọc của màn hình */
+    left: 190%; /* Đặt ảnh sang phải khỏi vùng login */
+    transform: translate(-40%, -50px); /* Điều chỉnh dịch chuyển vị trí */
+    z-index: 10; /* Đặt z-index cao để đảm bảo ảnh nằm trên login hoặc có thể nhìn thấy */
+}
+
+.cho img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Giữ tỷ lệ ảnh và làm đầy không gian 250x250 */
+}
+.meo{
+    justify-content: space-around;
+    width: 32%;
+    height: 32%;
+    position: absolute; /* Đặt vị trí tuyệt đối để ảnh có thể nằm ngoài login */
+    top: 105%; /* Căn chỉnh theo chiều dọc của màn hình */
+    left: 149%; /* Đặt ảnh sang phải khỏi vùng login */
+    transform: translate(-40%, -50px); /* Điều chỉnh dịch chuyển vị trí */
+    z-index: 10; /* Đặt z-index cao để đảm bảo ảnh nằm trên login hoặc có thể nhìn thấy */
+}
+
+.meo img {
+    width: 100%;
+    height:100%;
+    object-fit: cover; /* Giữ tỷ lệ ảnh và làm đầy không gian 250x250 */
+}
+.vong{
+    justify-content: space-around;
+    width: 28%;
+    height: 28%;
+    position: absolute; /* Đặt vị trí tuyệt đối để ảnh có thể nằm ngoài login */
+    top: 107%; /* Căn chỉnh theo chiều dọc của màn hình */
+    left: 273%; /* Đặt ảnh sang phải khỏi vùng login */
+    transform: translate(-40%, -50px); /* Điều chỉnh dịch chuyển vị trí */
+    z-index: 10; /* Đặt z-index cao để đảm bảo ảnh nằm trên login hoặc có thể nhìn thấy */
+}
+
+.vong img {
+    width: 100%;
+    height:100%;
+    object-fit: cover; /* Giữ tỷ lệ ảnh và làm đầy không gian 250x250 */
+}
+.thucan{
+    justify-content: space-around;
+    width: 30%;
+    height: 30%;
+    position: absolute; /* Đặt vị trí tuyệt đối để ảnh có thể nằm ngoài login */
+    top: 106%; /* Căn chỉnh theo chiều dọc của màn hình */
+    left: 230%; /* Đặt ảnh sang phải khỏi vùng login */
+    transform: translate(-40%, -50px); /* Điều chỉnh dịch chuyển vị trí */
+    z-index: 10; /* Đặt z-index cao để đảm bảo ảnh nằm trên login hoặc có thể nhìn thấy */
+}
+
+.thucan img {
+    width: 100%;
+    height:100%;
+    object-fit: cover; /* Giữ tỷ lệ ảnh và làm đầy không gian 250x250 */
+}
+.chuot{
+    justify-content: space-around;
+    width: 27%;
+    height: 27%;
+    top: 107%;
+    left: 310%;
+    position: absolute;
+    transform: translate(-40%, -50px); /* Điều chỉnh dịch chuyển vị trí */
+    z-index: 10;
+}
+.chuot img {
+    width: 100%;
+    height:100%;
+    object-fit: cover; /* Giữ tỷ lệ ảnh và làm đầy không gian 250x250 */
+}
