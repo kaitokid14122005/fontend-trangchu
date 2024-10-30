@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Oswald:wght@200..700&display=swap');
+:root {
+    --color--one: #FF8C00;
+    --font: "Oswald", sans-serif;
+}
+body{
+  font-family: var(--font);
+  zoom: 100%;
+}

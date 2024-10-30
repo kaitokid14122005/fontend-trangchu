@@ -79,7 +79,21 @@
             </label>
         </div>
         <br>
-        <button class="header-nav__link button button--boder">Login</button>
+        <button onclick="handleLogin()" class="header-nav__link button button--boder">Login</button>  
+        <script>
+            function handleLogin() {
+                // Lấy thông tin người dùng nhập vào
+                const email = document.querySelector("input[type='text']").value;
+                const password = document.querySelector("input[type='password']").value;
+    
+                // Kiểm tra đăng nhập (cần thay bằng kiểm tra thực tế)
+                if (email === "your-email@example.com" && password === "your-password") {
+                    window.location.href = "/homepage"; // Chuyển hướng thành công
+                } else {
+                    alert("Sai tên đăng nhập hoặc mật khẩu");
+                }
+            }
+        </script>      
         <br>
         <a href="#">Forgot Username/Password</a>
         <br>

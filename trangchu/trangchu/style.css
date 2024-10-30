@@ -1,0 +1,238 @@
+.header-top .inner-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.header-top .inner-logo img {
+    height: 60px;
+    width: 65px;
+    margin-right: 250px;
+}
+
+.header-top .inner-diachi {
+    height: 0px;
+    font-size: 17px;
+    width: 256px;
+    margin-right: 60px;
+    padding-top: 9px;
+}
+
+.header-top .inner-hotline {
+    color: #FF8C00;
+    font-weight: 400;
+    font-size: 30px;
+    width: auto;
+    margin-right: 70px;
+    padding-top: 9px;
+}
+
+.header-top .inner-dangxuat {
+    height: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    width: auto;
+    padding-top: 15px;
+}
+
+.header-top .inner-shop {
+    height: 20px;
+    font-size: 35px;
+    width: auto;
+    margin-left: 5px;
+}
+
+.menu {
+    background-color: #FF8C00;
+    margin: 0px;
+}
+
+.inner-dangxuat,
+.inner-shop {
+
+    align-items: center;
+}
+.inner-dangxuat:hover a,
+.inner-shop:hover a{
+color: red;
+}
+a {
+    text-decoration: none;
+    /* Bỏ gạch chân trong link */
+    color: black;
+    /* Tùy chọn màu chữ */
+}
+
+.header-main {
+    background: var(--color--one);
+}
+
+.header-main .menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex; /* Sử dụng flex để căn chỉnh các mục theo hàng ngang */
+    align-items: center;
+    list-style-type: none; /* Không hiển thị dấu gạch đầu dòng */
+    margin-left: 35px;/* Khoảng cách bên trái */
+    margin-right: 50px; /* Khoảng cách bên phải */
+    font-size: 22px; /* Kích thước chữ */
+    white-space: nowrap; /* Ngăn không cho chữ bị xuống dòng */
+}
+
+.active a {
+    border: 0px solid #fb6004;
+    box-sizing: border-box;
+}
+.active,
+.menu ul li:hover {
+    background-color: #fb6004;
+    padding: 15px;
+    /* Màu nền khi hover hoặc active */
+
+    box-sizing: border-box;
+}
+
+.menu ul li {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.menu ul li a{
+    display: flex   ;
+}
+.search,
+.form_search {
+    margin-left: 5px;
+    font-size: 20px;
+}
+.box-chomenu{
+    display: none;
+}
+.menu ul li:hover .box-chomenu{
+display: block;
+position: absolute;
+background-color: #fb6004;
+}
+.menu ul li:hover .box-chomenu ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li .box-chomenu{
+margin-top: 15px;
+margin-left: -15px;
+}
+.menu ul li:hover .box-chomenu ul li{
+    width: 300px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    background: transparent;
+    border-radius: 0;
+    padding: 10px;
+    margin: 10px;
+}
+.box-chomenu ul li:hover a{
+    color: red;
+}
+.menu ul li:hover .box-chomenu ul li:last-child {
+    border-bottom: none; /* Xóa đường viền dưới cho mục cuối cùng */
+}
+
+.box-meomenu{
+    display: none;
+}
+.menu ul li:hover .box-meomenu{
+display: block;
+position: absolute;
+background-color: #fb6004;
+}
+.menu ul li:hover .box-meomenu ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li .box-meomenu{
+margin-top: 15px;
+margin-left: -15px;
+}
+.menu ul li:hover .box-meomenu ul li{
+    width: 310px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    background: transparent;
+    border-radius: 0;
+    padding: 10px;
+    margin: 10px;
+}
+.box-meomenu ul li:hover a{
+    color: red;
+}
+.menu ul li:hover .box-meomenu ul li:last-child {
+    border-bottom: none; /* Xóa đường viền dưới cho mục cuối cùng */
+}
+
+.box-dichvumenu{
+    display: none;
+}
+.menu ul li:hover .box-dichvumenu{
+display: block;
+position: absolute;
+background-color: #fb6004;
+}
+.menu ul li:hover .box-dichvumenu ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li .box-dichvumenu{
+margin-top: 15px;
+margin-left: -15px;
+}
+.menu ul li:hover .box-dichvumenu ul li{
+    width: 270px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    background: transparent;
+    border-radius: 0;
+    padding: 10px;
+    margin: 10px;
+}
+.box-dichvumenu ul li:hover a{
+    color: red;
+}
+.menu ul li:hover .box-dichvumenu ul li:last-child {
+    border-bottom: none; /* Xóa đường viền dưới cho mục cuối cùng */
+}
+.banner img{
+    width: 100%;
+}
+.banner {
+    position: relative;
+    z-index: 1; /* Banner có z-index thấp hơn */
+}
+
+.menu {
+    position: relative; /* Đảm bảo .menu là vị trí tương đối */
+    z-index: 2; /* Menu có z-index cao hơn banner */
+}
+
+.dcsdtweb {
+    display: none; /* Ẩn mặc định */
+    position: absolute;
+    background-color: rgba(66, 59, 59, 0.7); /* Màu nền trong suốt */
+    color: white;
+    padding: 10px;
+    top: 100%; /* Vị trí dưới menu */
+    left: 0;
+    right: 0;
+    z-index: 3; /* Đảm bảo .dcsdtweb nằm trên cùng */
+}
+
+.banner:hover +.dcsdtweb {
+    display: block; /* Hiện thông tin khi hover */
+}
+.dcsdtweb ul {
+    display: flex;
+    margin:3px;
+    justify-content: space-between;
+    list-style-type: none;
+}
