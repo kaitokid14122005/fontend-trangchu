@@ -12,9 +12,9 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="./asset/base.css">
-    <link rel="stylesheet" href="./asset/reset.css">
-    <link rel="stylesheet" href="./asset/style.css">
+    <link rel="stylesheet" href="/asset/reset.css">
+    <link rel="stylesheet" href="/asset/base.css">
+    <link rel="stylesheet" href="/asset/style.css">
 </head>
 <div class="top">
     <h1>
@@ -28,7 +28,7 @@
     <header class="header">
         <div class="wapper header-wapper">
             <a href="/" class="logo">
-                <img src="./asset/images/de2df74ac58363d51ae869c60a9a06be 1.png" alt="logo">
+                <img src="/asset/images/de2df74ac58363d51ae869c60a9a06be 1.png" alt="logo">
             </a>
             <nav class="header-nav">
                 <ul class="header-nav__list">
@@ -54,8 +54,8 @@
         </div>
     </header>
     <div class="banner">
-        <img src="./asset/images/backgroud1.png" class="Backgourd1" alt="backgourd1">
-        <img src="./asset/images/backgoud2.png" class="Backgoud2" alt="backgoud2">
+        <img src="/asset/images/backgroud1.png" class="Backgourd1" alt="backgourd1">
+        <img src="/asset/images/backgoud2.png" class="Backgoud2" alt="backgoud2">
     </div>
 
     <div class="login">
@@ -63,11 +63,11 @@
             Member Login
         </h2>
         <p>
-            <img src="./asset/images/Email.png">
+            <img src="/asset/images/Email.png">
             <input type="text" placeholder="Email">
         </p>
         <p>
-            <img src="./asset/images/Lock.png">
+            <img src="/asset/images/Lock.png">
             <input type="password" placeholder="Password">
         </p>
         <br>
@@ -79,21 +79,13 @@
             </label>
         </div>
         <br>
-        <button onclick="handleLogin()" class="header-nav__link button button--boder">Login</button>  
+        <button onclick="handleLogin()" class="header-nav__link button button--boder">Login</button>    
         <script>
             function handleLogin() {
-                // Lấy thông tin người dùng nhập vào
-                const email = document.querySelector("input[type='text']").value;
-                const password = document.querySelector("input[type='password']").value;
-    
-                // Kiểm tra đăng nhập (cần thay bằng kiểm tra thực tế)
-                if (email === "your-email@example.com" && password === "your-password") {
-                    window.location.href = "/homepage"; // Chuyển hướng thành công
-                } else {
-                    alert("Sai tên đăng nhập hoặc mật khẩu");
-                }
+                // Chuyển trực tiếp đến trang chủ mà không cần kiểm tra tài khoản
+                window.location.href="/trangchu/trangchu/index.html"
             }
-        </script>      
+        </script>   
         <br>
         <a href="#">Forgot Username/Password</a>
         <br>
@@ -102,31 +94,31 @@
         </div>
         <br>
         <div class="corgi">
-            <img src="./asset/images/anhconcho.png" class="corgi">
+            <img src="/asset/images/anhconcho.png" class="corgi">
         </div>
         <br>
         <div class="hello-container">
-            <img src="./asset/images/anhhello.png" class="hello-img">
+            <img src="/asset/images/anhhello.png" class="hello-img">
         </div>
         <br>
         <div class="cho">
-            <img src="./asset/images/anhcho.png" alt="anhcho">
+            <img src="/asset/images/anhcho.png" alt="anhcho">
         </div>
         <br>
         <div class="meo">
-            <img src="./asset/images/anhmeo.png" alt="anhmeo">
+            <img src="/asset/images/anhmeo.png" alt="anhmeo">
         </div>
         <br>
         <div class="vong">
-            <img src="./asset/images/anhvong.png" alt="anhvong">
+            <img src="/asset/images/anhvong.png" alt="anhvong">
         </div>
         <br>
         <div class="thucan">
-            <img src="./asset/images/anhthucan.png" alt="anhthucan">
+            <img src="/asset/images/anhthucan.png" alt="anhthucan">
         </div>
         <br>
         <div class="chuot">
-            <img src="./asset/images/anhchuot.png" alt="anhchuot">
+            <img src="/asset/images/anhchuot.png" alt="anhchuot">
         </div>
 </body>
 

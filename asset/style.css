@@ -259,10 +259,10 @@ body {
 }
 .corgi {
     position: absolute;
-    width: 88% !important;
+    width: 93% !important;
     height: 85% !important;
     top: 0%;
-    left: 100%;
+    left: 94%;
    
     z-index: 1;
     pointer-events: none; /* Không nhận sự kiện click */

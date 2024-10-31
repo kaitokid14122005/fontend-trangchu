@@ -236,3 +236,8 @@ margin-left: -15px;
     justify-content: space-between;
     list-style-type: none;
 }
+.diachi i,
+.number-phone i,
+.global i {
+    margin-right: 8px;
+}
